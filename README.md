@@ -2,9 +2,9 @@
 
 > 一个基于 Python + Tkinter 的 PCL CE 辅助工具，用于一键组装原版 Minecraft 版本、导入第三方整合包、以及在保留 Mod Loader 的前提下修改已有实例的游戏版本。
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+!\[Python]([https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white))
+!\[License]([https://img.shields.io/badge/license-MIT-green](https://img.shields.io/badge/license-MIT-green))
+!\[Platform]([https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey))
 
 ***
 
