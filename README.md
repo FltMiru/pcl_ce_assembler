@@ -2,9 +2,9 @@
 
 > 一个基于 Python + Tkinter 的 PCL CE 辅助工具，用于一键组装原版 Minecraft 版本、导入第三方整合包、以及在保留 Mod Loader 的前提下修改已有实例的游戏版本。
 
-!\[Python]([https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white))
-!\[License]([https://img.shields.io/badge/license-MIT-green](https://img.shields.io/badge/license-MIT-green))
-!\[Platform]([https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey))
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
 ***
 
@@ -16,11 +16,7 @@
 - 从 Modrinth、CurseForge 下载的整合包需要手动拆解、手动投放模组；
 - 想把一个装好了 Forge/Fabric 的实例"跨版本"升级或降级，但又不想丢失 Mod Loader 配置。
 
-本工具在本地完成版本 JSON、client.jar、natives 目录、模组文件的组装与校验，生成结果可直接被 PCL CE 识别。
-
-> 截图占位：`docs/screenshot-main.png`
->
-> ![主界面预览](docs/screenshot-main.png)
+本工具在本地完成版本 JSON、client.jar、natives 目录、模组文件的组装与校验，生成结果可直接被 PCL CE 识别。界面预览见下方 [📸 界面预览](#-界面预览)。
 
 ***
 
@@ -70,7 +66,7 @@
 
 | 原版组装 | 整合包导入 | 版本修改 |
 | --- | --- | --- |
-| ![alt text](QQ_1793489713484.png) | ![alt text](QQ_1793489741625.png) | ![alt text](QQ_1793489777814.png) |
+| ![原版组装界面](QQ_1793489713484.png) | ![整合包导入界面](QQ_1793489741625.png) | ![版本修改界面](QQ_1793489777814.png) |
 
 ***
 
@@ -84,17 +80,17 @@
 ### 安装依赖
 
 ```bash
-git clone https://github.com/FltMiru/pcl-ce-assembler_enhanced
-cd pcl-ce-assembler
-pip install requirements.txt
-#可选步骤
+git clone https://github.com/FltMiru/pcl_ce_assembler.git
+cd pcl_ce_assembler
+pip install -r requirements.txt
+# 可选步骤：安装浅色主题
 pip install sv-ttk
 ```
 
 ### 运行
 
 ```bash
-python pcl_ce_assembler_enhanced.py
+python pcl_ce_assembler.py
 ```
 
 ### 使用流程
@@ -147,10 +143,14 @@ CurseForge 官方 API 要求携带 API Key 才能下载模组文件。获取方�
 ## 📁 目录结构
 
 ```
-pcl-ce-assembler/
+pcl_ce_assembler/
 ├── pcl_ce_assembler.py
 ├── README.md
 ├── requirements.txt
+├── LICENSE
+├── QQ_1793489713484.png
+├── QQ_1793489741625.png
+└── QQ_1793489777814.png
 ```
 
 ***
@@ -186,7 +186,7 @@ A: 请确认已填写有效的 CurseForge API Key，且网络可访问 [`api.cur
 
 **Q: Linux 下运行报 `ModuleNotFoundError: No module named '_tkinter'`？**
 
-A: 
+A:
 Ubuntu / Debian 请执行 `sudo apt install python3-tk`；
 Fedora / RHEL 请执行 `sudo dnf install python3-tkinter`。
 
